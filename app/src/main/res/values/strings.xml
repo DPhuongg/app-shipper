@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Shipper</string>
+    <string name="app_name">AppShipper</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
 </resources>

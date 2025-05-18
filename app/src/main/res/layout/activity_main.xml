@@ -43,7 +43,7 @@
                 android:layout_weight="0"
                 android:scaleType="centerCrop"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerFull"
-                app:srcCompat="@drawable/doraemon1" />
+                app:srcCompat="@drawable/doraemon" />
 
             <TextView
                 android:id="@+id/tenShip"

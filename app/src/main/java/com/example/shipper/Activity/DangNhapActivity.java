@@ -1,5 +1,5 @@
-package com.example.shipper;
-
+package com.example.shipper.Activity;
+import com.example.shipper.R;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
