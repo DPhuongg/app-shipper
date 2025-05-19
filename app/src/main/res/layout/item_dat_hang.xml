@@ -23,7 +23,7 @@
             android:layout_margin="10dp"
             android:layout_gravity="center"
             android:layout_weight="0"
-            app:srcCompat="@drawable/doraemon1" />
+            app:srcCompat="@drawable/doraemon" />
 
         <LinearLayout
             android:layout_width="match_parent"

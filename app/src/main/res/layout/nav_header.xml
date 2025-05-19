@@ -22,7 +22,7 @@
             android:layout_marginStart="20dp"
             android:scaleType="centerCrop"
             android:layout_marginTop="60dp"
-            app:srcCompat="@drawable/doraemon1"
+            app:srcCompat="@drawable/doraemon"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerFull" />
 
         <TextView
