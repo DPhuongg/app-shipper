@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -151,12 +152,13 @@ public class DonHangAdapter extends RecyclerView.Adapter<DonHangAdapter.DonHangV
                                             DocumentSnapshot document = task.getResult().getDocuments().get(0);
                                             Log.d("KiemTra", "Ma ship "+ masp);
                                             // Cập nhật TrangThaiShip và KiemTraDonHang
-                                            document.getReference().update("TrangThaiShip", "Shipper đã xác nhận","MaShipper",masp, "KiemTraDonHang", true)
+                                            document.getReference().update("TrangThaiShip", "Shipper đã xác nhận", "MaShipper", masp, "KiemTraDonHang", true)
                                                     .addOnSuccessListener(aVoid -> {
-                                                        Log.d("KiemTra", "Đã cập nhật thành công TrangThaiShip và KiemTraDonHang");
+                                                        Toast.makeText(context, "Nhận đơn hàng thành công!", Toast.LENGTH_SHORT).show();
+                                                        // ...các xử lý khác nếu có...
                                                     })
                                                     .addOnFailureListener(e -> {
-                                                        Log.e("KiemTra", "Lỗi khi cập nhật TrangThaiShip và KiemTraDonHang", e);
+                                                        Toast.makeText(context, "Có lỗi xảy ra, vui lòng thử lại!", Toast.LENGTH_SHORT).show();
                                                     });
                                         } else {
                                             Log.e("KiemTra", "Không tìm thấy đơn hàng hoặc điều kiện không phù hợp: ", task.getException());

@@ -9,16 +9,6 @@
             android:icon="@drawable/ic_check"
             android:title="Nhận đơn"/>
         <item
-            android:id="@+id/dhdg"
-            android:icon="@drawable/ic_donhang"
-            android:title="Đơn hàng đang giao"/>
-
-        <item
-            android:id="@+id/LichSuDH"
-            android:icon="@drawable/ic_history"
-            android:title="Lịch sử đơn hàng"/>
-
-        <item
             android:id="@+id/DangXuat"
             android:icon="@drawable/ic_logout"
             android:title="Đăng xuất" />

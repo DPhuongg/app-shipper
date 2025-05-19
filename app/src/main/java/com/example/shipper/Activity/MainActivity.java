@@ -103,17 +103,6 @@ public class MainActivity extends AppCompatActivity {
 
                     finish();
                 }
-                else if(id == R.id.dhdg) {
-                    startActivity(new Intent(MainActivity.this, DonHangDangGiaoActivity.class));
-
-                    finish();
-                }
-                else if(id == R.id.LichSuDH) {
-                    startActivity(new Intent(MainActivity.this, LichSuDonHangActivity.class));
-
-                    finish();
-                }
-
 
                 else {
                     SharedPreferences preferences = getSharedPreferences("UserData", MODE_PRIVATE);
