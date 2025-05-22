@@ -103,7 +103,11 @@ public class MainActivity extends AppCompatActivity {
 
                     finish();
                 }
+                else if(id == R.id.dhdg) {
+                    startActivity(new Intent(MainActivity.this, DonHangDangGiaoActivity.class));
 
+                    finish();
+                }
                 else {
                     SharedPreferences preferences = getSharedPreferences("UserData", MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
@@ -232,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void loaddata(){
         CollectionReference referenceDH = firestore.collection("DonHang");
-        referenceDH.whereEqualTo("KiemTraDonHang", false)
+        referenceDH.whereEqualTo("TrangThaiShip", "Chờ shipper xác nhận")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override

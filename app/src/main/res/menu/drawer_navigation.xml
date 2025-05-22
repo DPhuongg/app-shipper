@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_check"
             android:title="Nhận đơn"/>
         <item
+            android:id="@+id/dhdg"
+            android:icon="@drawable/icon_order"
+            android:title="Đơn hàng đang giao"/>
+        <item
             android:id="@+id/DangXuat"
             android:icon="@drawable/ic_logout"
             android:title="Đăng xuất" />
